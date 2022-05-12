@@ -68,8 +68,8 @@ class handDetector():
                 for i in range(1, 5):
                     if self.handList[self.fingertips[i]][0] < self.handList[handNumber][self.fingertips[i] - 2][0]:
                         self.fingers[handNumber].append(1)
-                        else:
-                            self.fingers[handNumber].append(0)
+                           else:
+                                self.fingers[handNumber].append(0)
 
 
 
@@ -93,4 +93,6 @@ def main():
         if cv2.waitKey(1) &  0xFF == 27:  # esc
             break
 
-main()
+print(__name__)
+if __name__ == "__main__":
+    main()
